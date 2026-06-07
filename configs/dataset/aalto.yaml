@@ -1,0 +1,11 @@
+# Aalto 136M Keystrokes dataset configuration.
+# Author: Haoyu Qiang.
+
+name: aalto
+modalities: [timing]
+github_url: "https://github.com/example-mirror/aalto-136m-keystrokes"
+cache_subdir: aalto
+password_digits: [4, 6, 8]
+substring_stride: 1
+sample_rate:
+  timing: 1000

@@ -1,0 +1,15 @@
+# Cross-dataset generalization experiment configuration.
+# Author: Haoyu Qiang.
+
+name: cross_dataset
+password_digits: 6
+train_test_pairs:
+  - {train: bbmas, test: vuagnoux_pasini}
+  - {train: bbmas, test: zzt_acoustic}
+  - {train: bbmas, test: asonov_agrawal}
+  - {train: zzt_acoustic, test: bbmas}
+  - {train: vuagnoux_pasini, test: bbmas}
+  - {train: asonov_agrawal, test: zzt_acoustic}
+models: [aam_hg, cm2, m3_jepa, infomae, mea, rgt, rdl, se_htgnn]
+metrics: [cer, sra]
+seeds: [11, 23, 47, 91, 137]

@@ -1,0 +1,10 @@
+# Coupled cross-modal variational alignment (CM2) baseline configuration.
+# Author: Haoyu Qiang.
+
+name: cm2
+modalities: [acoustic, vibration, electromagnetic]
+encoder_dim: 128
+latent_dim: 64
+copula_dim: 32
+dropout: 0.1
+symbol_vocab: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

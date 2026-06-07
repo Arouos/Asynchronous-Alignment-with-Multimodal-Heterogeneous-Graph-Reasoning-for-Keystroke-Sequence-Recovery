@@ -1,0 +1,13 @@
+# SU-AIS BB-MAS dataset configuration.
+# Author: Haoyu Qiang.
+
+name: bbmas
+modalities: [acoustic, vibration, timing]
+github_url: "https://github.com/example-mirror/bbmas"
+cache_subdir: bbmas
+password_digits: [4, 6, 8]
+substring_stride: 1
+sample_rate:
+  acoustic: 44100
+  vibration: 500
+  timing: 1000

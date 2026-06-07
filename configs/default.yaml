@@ -1,0 +1,31 @@
+# Default configuration shared across experiments.
+# Author: Haoyu Qiang.
+
+seed: 2024
+device: cuda
+num_workers: 4
+
+training:
+  epochs: 60
+  batch_size: 32
+  grad_clip_norm: 1.0
+  early_stop_patience: 10
+  num_seeds: 5
+
+optimizer:
+  name: adamw
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+scheduler:
+  name: cosine
+  warmup_epochs: 5
+  min_lr: 1.0e-6
+
+logging:
+  level: INFO
+  log_dir: logs
+
+paths:
+  cache_root: ~/.cache/papercode/datasets

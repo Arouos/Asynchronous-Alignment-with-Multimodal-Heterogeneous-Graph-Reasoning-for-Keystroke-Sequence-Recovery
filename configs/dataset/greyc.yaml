@@ -1,0 +1,11 @@
+# GREYC Keystroke dataset configuration.
+# Author: Haoyu Qiang.
+
+name: greyc
+modalities: [timing]
+github_url: "https://github.com/example-mirror/greyc-keystroke"
+cache_subdir: greyc
+password_digits: [4, 6, 8]
+substring_stride: 1
+sample_rate:
+  timing: 1000

@@ -1,0 +1,11 @@
+# Vuagnoux-Pasini electromagnetic leakage dataset configuration.
+# Author: Haoyu Qiang.
+
+name: vuagnoux_pasini
+modalities: [electromagnetic]
+github_url: "https://github.com/example-mirror/vuagnoux-pasini-em"
+cache_subdir: vuagnoux_pasini
+password_digits: [4, 6, 8]
+substring_stride: 1
+sample_rate:
+  electromagnetic: 200000

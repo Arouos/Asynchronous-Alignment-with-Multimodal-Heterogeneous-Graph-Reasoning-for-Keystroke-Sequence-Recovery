@@ -1,0 +1,11 @@
+# Asonov-Agrawal acoustic keystroke dataset configuration.
+# Author: Haoyu Qiang.
+
+name: asonov_agrawal
+modalities: [acoustic]
+github_url: "https://github.com/example-mirror/asonov-agrawal-acoustic"
+cache_subdir: asonov_agrawal
+password_digits: [4, 6, 8]
+substring_stride: 1
+sample_rate:
+  acoustic: 44100

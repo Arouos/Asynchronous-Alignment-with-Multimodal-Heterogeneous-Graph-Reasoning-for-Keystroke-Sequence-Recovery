@@ -1,0 +1,11 @@
+# (sp)iPhone vibration keystroke dataset configuration.
+# Author: Haoyu Qiang.
+
+name: spiphone
+modalities: [vibration]
+github_url: "https://github.com/example-mirror/spiphone-vibration"
+cache_subdir: spiphone
+password_digits: [4, 6, 8]
+substring_stride: 1
+sample_rate:
+  vibration: 100

@@ -1,0 +1,11 @@
+# Multi-modal mixture-of-experts JEPA baseline configuration.
+# Author: Haoyu Qiang.
+
+name: m3_jepa
+modalities: [acoustic, vibration, electromagnetic]
+encoder_dim: 128
+expert_dim: 96
+num_experts: 4
+predictor_dim: 128
+dropout: 0.1
+symbol_vocab: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

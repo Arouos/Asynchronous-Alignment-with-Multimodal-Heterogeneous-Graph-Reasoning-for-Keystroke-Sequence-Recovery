@@ -1,0 +1,9 @@
+# Relational deep learning baseline configuration.
+# Author: Haoyu Qiang.
+
+name: rdl
+modalities: [acoustic, vibration, electromagnetic]
+node_dim: 128
+num_relations: 4
+num_layers: 3
+symbol_vocab: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]

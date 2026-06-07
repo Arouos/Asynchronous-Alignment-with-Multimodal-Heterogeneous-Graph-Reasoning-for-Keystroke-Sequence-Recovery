@@ -1,0 +1,11 @@
+# SNR robustness experiment configuration.
+# Author: Haoyu Qiang.
+
+name: robustness_snr
+password_digits: 6
+snr_db_levels: [-10, -5, 0, 5, 10, 15, 20]
+noise_profiles: [office, hvac, gaussian]
+datasets: [bbmas, vuagnoux_pasini, zzt_acoustic]
+models: [aam_hg, cm2, m3_jepa, infomae, mea, rgt, rdl, se_htgnn]
+metrics: [cer, sra]
+seeds: [11, 23, 47, 91, 137]

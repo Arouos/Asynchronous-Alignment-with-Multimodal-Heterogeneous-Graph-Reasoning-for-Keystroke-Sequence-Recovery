@@ -1,0 +1,31 @@
+# Main comparison experiment configuration.
+# Author: Haoyu Qiang.
+
+name: main_comparison
+password_digits: 6
+datasets:
+  - bbmas
+  - cmu
+  - aalto
+  - clarkson2
+  - buffalo
+  - greyc
+  - vuagnoux_pasini
+  - zzt_acoustic
+  - asonov_agrawal
+  - spiphone
+models:
+  - aam_hg
+  - cm2
+  - m3_jepa
+  - infomae
+  - mea
+  - practical_asca
+  - woot_llm
+  - vreckey
+  - heimdall
+  - rgt
+  - rdl
+  - se_htgnn
+metrics: [cer, sra, top1, top3, f1, alignment_error]
+seeds: [11, 23, 47, 91, 137]

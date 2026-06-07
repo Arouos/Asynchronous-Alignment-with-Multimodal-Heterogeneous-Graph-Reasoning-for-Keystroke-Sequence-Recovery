@@ -1,0 +1,52 @@
+# AAM-HG model configuration.
+# Author: Haoyu Qiang.
+
+name: aam_hg
+
+modalities: [acoustic, vibration, electromagnetic]
+candidate_scales: [16, 32, 64, 128]
+node_dim: 128
+gnn_layers: 3
+gating_hidden_dim: 64
+cross_modal_topk: 8
+action_anchor_num: 16
+symbol_vocab: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+modal_encoder:
+  conv_channels: [32, 64, 128]
+  kernel_size: 5
+  dropout: 0.1
+
+scale_aggregation:
+  scale_embed_dim: 32
+
+cross_modal:
+  delay_prior:
+    kernel_type: gaussian
+    learnable_sigma: true
+  sparsifier:
+    max_degree: 8
+
+temporal_gating:
+  gate_hidden_dim: 64
+
+graph_coarsening:
+  anchor_window: 96
+
+ordered_decoder:
+  hidden_dim: 128
+  relation_temperature: 1.0
+  decay_omega: 1.0
+
+loss_weights:
+  lambda1_sparse: 0.1
+  lambda2_degree: 0.1
+  lambda3_triangle: 0.05
+
+ablation:
+  use_sparse_loss: true
+  use_degree_loss: true
+  use_triangle_loss: true
+  use_temporal_gating: true
+  use_graph_coarsening: true
+  use_relation_decoder: true

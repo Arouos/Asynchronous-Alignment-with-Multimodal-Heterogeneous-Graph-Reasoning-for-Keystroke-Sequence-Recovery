@@ -1,0 +1,11 @@
+# Zhuang-Zhou-Tygar acoustic keystroke corpus configuration.
+# Author: Haoyu Qiang.
+
+name: zzt_acoustic
+modalities: [acoustic]
+github_url: "https://github.com/example-mirror/zhuang-zhou-tygar-acoustic"
+cache_subdir: zzt_acoustic
+password_digits: [4, 6, 8]
+substring_stride: 1
+sample_rate:
+  acoustic: 44100

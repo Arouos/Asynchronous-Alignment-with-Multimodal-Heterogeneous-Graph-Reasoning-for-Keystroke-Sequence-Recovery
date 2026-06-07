@@ -1,0 +1,17 @@
+# Ablation experiment configuration.
+# Author: Haoyu Qiang.
+
+name: ablation
+password_digits: 6
+datasets: [bbmas]
+model: aam_hg
+seeds: [11, 23, 47, 91, 137]
+variants:
+  - {name: full, overrides: {}}
+  - {name: no_sparse_loss, overrides: {ablation: {use_sparse_loss: false}}}
+  - {name: no_degree_loss, overrides: {ablation: {use_degree_loss: false}}}
+  - {name: no_triangle_loss, overrides: {ablation: {use_triangle_loss: false}}}
+  - {name: no_temporal_gating, overrides: {ablation: {use_temporal_gating: false}}}
+  - {name: no_graph_coarsening, overrides: {ablation: {use_graph_coarsening: false}}}
+  - {name: no_relation_decoder, overrides: {ablation: {use_relation_decoder: false}}}
+metrics: [cer]

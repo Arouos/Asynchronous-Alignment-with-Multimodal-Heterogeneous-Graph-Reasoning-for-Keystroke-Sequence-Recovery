@@ -1,0 +1,17 @@
+# Modality-missing experiment configuration.
+# Author: Haoyu Qiang.
+
+name: modality_missing
+password_digits: 6
+scenarios:
+  - {present: [acoustic, vibration, electromagnetic]}
+  - {present: [acoustic, vibration]}
+  - {present: [acoustic, electromagnetic]}
+  - {present: [vibration, electromagnetic]}
+  - {present: [acoustic]}
+  - {present: [vibration]}
+  - {present: [electromagnetic]}
+datasets: [bbmas]
+models: [aam_hg, cm2, m3_jepa, infomae, mea, rgt, rdl, se_htgnn]
+metrics: [cer, sra]
+seeds: [11, 23, 47, 91, 137]
